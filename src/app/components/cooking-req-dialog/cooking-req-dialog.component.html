@@ -1,0 +1,19 @@
+<div class="modal-window">
+    <mat-dialog-content>
+        <h3 class="cook_wrap_head">Cooking instructions for restaurant</h3>
+        <div class="cook_wrap_dia">
+            <form [formGroup]="form">
+                <mat-form-field>
+                    <mat-label>Do you want to add cooking instructions?</mat-label>
+                    <textarea matInput formControlName="textarea"></textarea>
+                </mat-form-field>
+            </form>
+            <p>The restaurant will try their best to follow your instruction. However, no cancellation or refund will be possible if your request
+                is not met. Please note - instructions once aaded can’t be removed </p>
+        </div>
+        <div class="cook_wrap_footer">
+            <button mat-button (click)="clearTextarea()">Clear</button>
+            <button mat-button class="save_btn">Save</button>
+        </div>
+    </mat-dialog-content>
+</div>

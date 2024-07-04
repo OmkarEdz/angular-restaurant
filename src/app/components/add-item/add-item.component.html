@@ -1,0 +1,87 @@
+<div class="modal-window">
+    <div class="popup_head">
+        <div class="popup_actions">
+        <button class="close_btn" mat-button mat-dialog-close><mat-icon>close</mat-icon></button>
+      </div>
+    </div>
+    <mat-dialog-content>
+        <div class="popup_inner">
+            <h2>Margherita Pizza</h2>
+            <h3>Customise as per your taste</h3>
+            <!-- static-stepper.component.html -->
+            <mat-horizontal-stepper class="custom_stepper">
+              <mat-step [stepControl]="firstFormGroup" label="Step 1">
+                <form [formGroup]="firstFormGroup">
+                  <div class="stepper_inner_cont">
+                    <h4>Crust</h4>
+                    <p>Select any 1</p>
+                  </div>
+                  <div class="first_step_inner">
+                    <mat-radio-group aria-label="Select an option">
+                      <mat-radio-button value="1">New Hand Tossed</mat-radio-button>
+                      <mat-radio-button value="2">Classic Hand Tossed</mat-radio-button>
+                      <mat-radio-button value="3">Classic Hand Tossed</mat-radio-button>
+                      <mat-radio-button value="4">Classic Hand Tossed</mat-radio-button>
+                      <mat-radio-button value="5">New Hand Tossed</mat-radio-button>
+                    </mat-radio-group>
+                  </div>
+                  <div class="step_bottom_wrap">
+                    <p class="step_text">Step 1/3</p>
+                    <button class="step_btn" mat-button matStepperNext>Continue</button>
+                  </div>
+                </form>
+              </mat-step>
+              
+              <mat-step [stepControl]="secondFormGroup" label="Step 2">
+                <form [formGroup]="secondFormGroup">
+                  <button class="prev_btn" mat-button matStepperPrevious>New Hand Tossed <span class="bold_text">Change</span></button>
+                  <div class="stepper_inner_cont sec_stepper_inner_cont">
+                    <h4>Size</h4>
+                    <p>Select any 1</p>
+                  </div>
+                  <div class="first_step_inner sec_step_inner">
+                    <mat-radio-group aria-label="Select an option">
+                      <mat-radio-button value="1">Medium <span>₹ 304</span></mat-radio-button>
+                      <mat-radio-button value="2">Regular <span>₹ 138</span></mat-radio-button>
+                      <mat-radio-button value="3">Large <span>₹ 138</span></mat-radio-button>
+                    </mat-radio-group>
+                  </div>
+                  <div class="step_bottom_wrap">
+                    <p class="step_text">Step 2/3</p>
+                    <button class="step_btn" mat-button matStepperNext>Continue</button>
+                  </div>
+                </form>
+              </mat-step>
+              
+              <mat-step label="Step 3">
+                <form [formGroup]="thirdFormGroup">
+                  <button class="prev_btn prev_btn_last" mat-button matStepperPrevious>New Hand Tossed <span class="bold_text">Change</span></button>
+                  <div class="stepper_inner_cont">
+                    <h4>Size</h4>
+                  </div>
+                  <button class="prev_btn prev_btn_last size_item_btn" mat-button matStepperPrevious><mat-radio-button value="1">Medium <span>₹ 304</span></mat-radio-button></button>
+                  <div class="stepper_inner_cont">
+                    <h4>Veg Toppings Medium</h4>
+                    <p>Select upto 8</p>
+                  </div>
+                  <div class="first_step_inner sec_step_inner">
+                    <mat-radio-group aria-label="Select an option">
+                      <mat-radio-button value="1">Medium <span>₹ 304</span></mat-radio-button>
+                      <mat-radio-button value="2">Regular <span>₹ 138</span></mat-radio-button>
+                      <mat-radio-button value="3">Large <span>₹ 138</span></mat-radio-button>
+                    </mat-radio-group>
+                  </div>
+                  <div class="step_bottom_wrap">
+                    <div class="wrapper">
+                      <button class="plusminus" (click)="handleMinus()"><mat-icon>remove</mat-icon></button>
+                      <input type="number" matInput  class="num" value="1" [(ngModel)]="value" />
+                      <button class="plusminus" (click)="handlePlus()"><mat-icon>add</mat-icon></button>
+                    </div>
+                    <button class="step_btn" mat-button (click)="redirectToCart()">Add Item</button>
+                  </div>
+                </form>
+              </mat-step>
+            </mat-horizontal-stepper>
+        </div>
+    </mat-dialog-content>
+</div>

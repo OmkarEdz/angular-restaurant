@@ -1,0 +1,279 @@
+    
+        ::ng-deep .address_popup_wrapper.add_addres_popup_wrapper {
+            background-attachment: fixed;
+            .cdk-global-overlay-wrapper{
+                &:last-child {
+                    justify-content: center !important;
+                    align-items: center !important;
+                    width: 100%;
+            
+                        .cdk-overlay-pane {
+                            max-width: 100% !important;
+                            min-width: auto;
+                            height: unset;
+                        }   
+                    }
+        
+                    .mat-dialog-content {
+                        max-height: 100%;
+                        padding: 0px;
+                        margin: 0px;
+                    }
+    
+                }
+            }
+        
+        .modal-window {
+            min-width: 600px;
+            max-width: 600px;
+            max-height: 85vh;
+            overflow-y: auto !important;
+            position: relative;
+
+            .mat-mdc-dialog-content {
+                max-height: 65vh;
+        
+                button {
+                    cursor: pointer;
+                }
+            
+                .popup_head {
+                    display: flex;
+                    align-items: center;
+                    padding-bottom:10px;
+                    
+                    .popup_actions {
+                        display: flex;
+                        align-items: center;
+                        width: 100%;
+                        justify-content: space-between;position:relative;
+            
+                        .popup_heading {
+                            margin: 0px;
+                            font-weight: 600;
+                            display: flex;
+                            align-items: center;
+                        }
+            
+                        button {
+                            padding:0px;
+                            min-width: 35px;
+                            margin-right:0px;
+                            text-align: right;
+                            background: transparent;
+                            line-height: 1;
+        
+                            &:hover {
+                                background: transparent;
+                            }
+            
+                            @media screen and (max-width: 600px) {
+                                padding:0px 5px;
+                                min-width: 30px;
+                            }
+                
+                            .mat-icon {
+                                @media screen and (max-width: 600px) {
+                                    font-size: 20px;
+                                }
+                            }
+                        }
+                        @media screen and (max-width: 600px) {
+                            flex-wrap: wrap;
+                        }
+                    }
+                }
+        
+                .popup_inner.address_form_inner {
+                    display: flex;
+                    flex-direction: column;
+        
+                    .address_form_field {
+                        margin-bottom: 20px;
+                        label {margin-bottom: 10px;display: block;}
+                        button {
+                            width: auto;
+                            line-height: 1;
+                            padding: 6px 20px;
+                            background: transparent;
+                            border: 1px solid #000;
+                            border-radius: 20px;
+                            margin-right: 50px;
+                            font-size: 14px;
+                            height: unset;
+        
+                            &:hover {
+                                background: #000;
+                                color: #fff;
+
+                                ::ng-deep .mdc-button__label {
+                                    color: #fff;
+                                }
+                            }
+
+                            @media screen and (max-width: 768px) {
+                                margin-right: 20px;
+                            }
+                        }
+                    }
+        
+                    ::ng-deep .mat-mdc-text-field-wrapper {
+                        width: 100%;
+                        margin:0px 0px 25px;
+                        padding: 0px;
+        
+                        
+                        ::ng-deep .mat-mdc-form-field-flex {
+                            padding: 10px 15px;
+                            margin-top: 0px;
+                            position: relative;
+                        
+                            ::ng-deep .mat-mdc-form-field-infix {
+                                margin: 0px;
+                                padding-top: 0;
+                                padding-bottom: 0;
+        
+                                ::ng-deep .mdc-notched-outline__notch {
+                                    top: -20px;
+                                    background: #fff;
+                                    width: max-content;
+                                    height: max-content;
+                                    font-size: 14px;
+                                    padding: 0px 7px;
+                                    left: -10px;
+        
+                                    label {
+                                        position: relative;
+                                    }
+                                }
+                            }
+        
+                            mat-icon {
+                                color: #ccc;
+                                width: 20px;
+                                height: 20px;
+                                font-size: 20px;
+                                padding: 0px;
+                            }
+                        }
+                    }
+                    ::ng-deep .mat-mdc-form-field-subscript-wrapper {
+                        padding: 0px;
+                        position: relative;
+                        font-size: 12px;
+                        top: -20px;
+
+                        .mat-mdc-form-field-hint-wrapper {
+                            position: relative;
+                            padding: 0px;
+                        }
+
+                        &:before {display: none;}
+                    }
+        
+                    ::ng-deep .mat-divider {
+                        border-top: 1px dashed #ccc;
+                        margin: -10px 0px 20px;
+                    }
+        
+                    ::ng-deep .mat-form-field-appearance-outline {
+                        .mat-form-field-outline-end {
+                            border-color: #ccc;
+                        }
+                        .mat-form-field-outline-gap {
+                            border-color: #ccc;
+                        }
+                        .mat-form-field-outline-start {
+                            border-color: #ccc;
+                        }
+
+                        label {
+                            top: -10px;
+                            background: #fff;
+                            width: max-content;
+                            height: max-content;
+                            font-size: 14px;
+                            padding: 0px 7px;
+                            left: 10px;
+                            position: absolute;
+                            transform: unset;
+
+                            ::ng-deep mat-label {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+        
+                    .ful_btn_black {
+                        background: #000;
+                        width: 100%;
+                        border-radius: 30px;
+                        color: #fff;
+                        border:1px solid #000;
+                        font-weight: 600;
+                        height: unset;
+                        padding: 11px 20px;
+
+                        ::ng-deep .mdc-button__ripple {
+                            display: none !important;
+                        }
+
+                        ::ng-deep .mdc-button__label {
+                            color: #fff;
+                        }
+        
+                        &:hover {
+                            color: #000;
+                            border:1px solid #000;
+                            background: #fff;
+
+                            ::ng-deep .mdc-button__label {
+                                color: #000;
+                            }
+                        }
+                    }
+                }
+
+            }
+            
+            @media screen and (max-width: 1200px) {
+                min-width: auto;
+            }
+            @media screen and (max-width: 768px) {
+                min-width: 95vw;
+                width: auto;
+            }
+        }
+        
+        .mat-menu-panel {
+            .mat-menu-content {
+                padding: 0px !important;
+        
+                button {background-color: #fff;}
+            }
+        }
+        
+        @media screen and (min-width: 600px) {
+            ::ng-deep .address_popup_wrapper.add_addres_popup_wrapper {
+                .cdk-global-overlay-wrapper{
+                    &:last-child {
+                        .mat-mdc-dialog-container {
+                        animation: none;
+                        transform: unset !important;
+                        background-color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+          
+        @media screen and (max-width: 599px) {
+            ::ng-deep .address_popup_wrapper.add_addres_popup_wrapper {
+                    .cdk-global-overlay-wrapper{
+                        .mat-mdc-dialog-container {
+                            animation: none;
+                            background-color: #fff;
+                        }
+                    }
+                }
+            }

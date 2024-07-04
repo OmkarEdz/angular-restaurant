@@ -1,0 +1,216 @@
+::ng-deep .save_add_popup_wrapper {
+
+::ng-deep .mat-mdc-dialog-container {
+    background: #fff;
+
+    .modal-window {
+        min-width: 500px;
+        max-width: 500px;
+        position: relative;
+
+        button {
+            cursor: pointer;
+
+            mat-icon {
+                margin: 0px;
+                font-size: 24px;
+                height: 24px;
+                width: 24px;
+            }
+        }
+
+        .popup_head {
+            display: flex;
+            align-items: center;
+
+            .popup_actions {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                justify-content: space-between;position:relative;
+
+                .popup_heading {
+                    margin: 0px;
+                }
+
+                button {
+                    padding:0px;
+                    min-width: 35px;
+                    margin-right:0px;
+                    text-align: right;
+                    background: transparent;
+                    line-height: 1;height: auto;
+                    justify-content: end;margin-top: 0px;
+
+                    ::ng-deep .mdc-button__ripple {
+                        display: none;
+                    }
+
+                    &:hover {
+                        background: transparent;
+                    }
+
+                    @media screen and (max-width: 600px) {
+                        padding:0px 5px;
+                        min-width: 30px;
+                    }
+
+                    ::ng-deep .mat-icon {
+                        @media screen and (max-width: 600px) {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .popup_inner {
+            margin-top: 20px;            
+            overflow: hidden;
+
+            .loc_box_item_list {
+                margin:0px;
+                padding: 0px;
+                list-style: none;
+                max-height: 65vh;
+                overflow-y: auto;
+
+                .loc_box_list_item {
+                    display: flex;
+                    padding-bottom: 25px;
+                    
+                    .loc_box_list_icon {
+                        margin-right: 10px;
+                        min-width: 25px;
+                        text-align: left;
+
+                        .loc_item_dist {
+                            margin: 0px;
+                            font-size: 12px;
+                        }
+                    }
+
+                    .loc_box_list_cont {
+                        position: relative;
+
+                        p {margin: 0px;font-weight: 600;line-height: 22px;font-size: 16px;}
+
+                        .box_item_current_loc_lbl {
+                            font-size: 14px;
+                        }
+
+                        .box_item_address {
+                            font-weight: 400 !important;
+                            line-height: 1.2;
+                            margin-top: 8px !important;
+                        }
+
+                        p.loc_item_dist {
+                            margin: 0px;
+                            font-size: 12px;
+                        }
+
+                        .loc_item_dist_right {
+                            position: absolute;
+                            right: 0px;
+                            top: 0px;
+                        }
+
+                        .icon_grp_right {
+                            position: absolute;
+                            right: 0px;
+                            top: 0px;
+                            display: flex;
+
+                            button {
+                                background: transparent;
+                                border: none;
+                                padding: 0px;
+                                line-height: 0;
+
+                                mat-icon {
+                                    font-size: 20px;
+                                    width: 20px;
+                                    height: 20px;
+                                }
+                            }
+                            .share_ico {
+                                background: #D9D9D9;
+                                border-radius: 50%;
+                                margin-right: 10px;
+                            }
+
+                            .icon-reverce {
+                                mat-icon {
+                                    transform: rotateY(180deg);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .add_address_btn {
+                background: transparent;
+                border: transparent;
+                width: 100%;
+                text-align: left;
+                display: flex;
+                align-items: center;
+                font-weight: 700;
+                font-size: 16px;
+                padding: 0px;
+                min-width: 100%;
+                justify-content: space-between;
+
+                span {
+                    display: flex;
+                    align-items: center;
+
+                    mat-icon {    
+                        margin:0px 10px;
+                    }
+                }
+            }
+
+            .loc_box_item_head {
+                text-align: center;
+                margin: -5px 0px 10px;
+                font-size: 14px;
+                letter-spacing: 1.5px !important;
+            }
+
+            .add_address_foot {
+                border-top: 1px solid #efefef;
+                padding-top: 10px;
+
+                button {
+                    height: auto;
+                    display: flex;
+                    align-items: center;
+                    font-size: 16px;
+
+                    mat-icon {margin-right: 10px;}
+                }
+            }
+        }
+        
+        ::ng-deep .mat-mdc-dialog-content {
+                margin: 0;
+                padding-top: 0 !important;
+                max-height: unset;
+                width: 100%;
+                line-height: 1;
+                
+        }
+        @media screen and (max-width: 1200px) {
+            min-width: auto;
+        }
+        @media screen and (max-width: 768px) {
+            min-width: 95vw;
+            width: auto;
+        }
+    }
+}
+
+}

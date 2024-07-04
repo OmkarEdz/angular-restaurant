@@ -1,0 +1,48 @@
+<div class="modal-window">
+    <div class="popup_head">
+        <div class="popup_actions">
+          <h3 class="popup_heading">Enter complete adress </h3>
+          <button class="close_btn" mat-button mat-dialog-close><mat-icon>close</mat-icon></button>
+        </div>
+    </div>
+    <mat-dialog-content>
+        <div class="popup_inner address_form_inner">
+            <div class="address_form_field">
+                <label>Save address as-</label>
+                <div class="btn_select_wrapper">
+                    <button mat-button>Home</button>
+                    <button mat-button>Work</button>
+                    <button mat-button>Other</button>
+                </div>
+            </div>
+            <mat-form-field appearance="outline" floatLabel="always">
+                <mat-label>Receiver’s name</mat-label>
+                <input matInput>
+                <mat-icon matSuffix>cancel</mat-icon>
+            </mat-form-field>
+            <mat-form-field appearance="outline" floatLabel="always">
+                <mat-label>Receiver’s contact</mat-label>
+                <input matInput>
+                <mat-icon matSuffix>cancel</mat-icon>
+                <mat-hint>May be used to assist delivery</mat-hint>
+            </mat-form-field>
+            <mat-divider></mat-divider>
+            <mat-form-field appearance="outline" floatLabel="always">
+                <mat-label>Flat / House no/ Floor / Building</mat-label>
+                <input matInput>
+                <mat-icon matSuffix>cancel</mat-icon>
+            </mat-form-field>
+            <mat-form-field appearance="outline" floatLabel="always">
+                <mat-label>Area / Sector / Locality</mat-label>
+                <input matInput>
+                <mat-icon matSuffix>cancel</mat-icon>
+            </mat-form-field>
+            <mat-form-field appearance="outline" floatLabel="always">
+                <mat-label>Nearby landmark  (optional)</mat-label>
+                <input matInput>
+                <mat-icon matSuffix>cancel</mat-icon>
+            </mat-form-field>
+            <button class="ful_btn_black" mat-button mat-dialog-close>Save address</button>
+        </div>
+    </mat-dialog-content>
+</div>

@@ -1,0 +1,85 @@
+.modal-window {
+    min-width: 500px;
+    max-width: 500px;
+    max-height: 85vh;
+    overflow-y: auto !important;
+    position: relative;
+    background: #fff;
+
+    button {
+        cursor: pointer;
+    }
+    
+    ::ng-deep .mat-mdc-dialog-content {
+            margin: 0;
+            padding: 0;
+            max-height: unset;
+            width: 100%;
+            line-height: 1;
+
+            h3 {
+                padding: 20px;
+                text-align: center;
+                margin:0px;
+                font-size: 20px;
+            }
+
+            p {
+                margin:0px;
+                font-size: 16px;
+                line-height: 22px;
+            }   
+
+            ul {
+                    margin: 0px;
+                    padding: 0px;
+                    list-style: none;
+
+                    li {
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 10px 0px;
+
+                        .price_text {
+                            font-weight: 600;
+
+                            .strike_text {
+                                margin-right: 10px;
+                                text-decoration: line-through;
+                            }
+                        }
+                    }
+
+                    .border_top {
+                        border-top: 1px dashed #ccc;
+                        padding-top: 20px;
+                        margin-top: 10px;
+                    }
+            }
+
+            .border_top_bot {
+                border: dashed #efefef;
+                border-width: 2px 0px;
+            }
+            
+            button {
+                width: 100%;
+                background: transparent;
+                border: none;
+                padding: 5px 20px 15px;
+                font-size: 16px;
+                font-weight: 600;outline: none;
+            }
+    }
+    @media screen and (max-width: 1200px) {
+        min-width: auto;
+    }
+    @media screen and (max-width: 768px) {
+        min-width: 95vw;
+        width: auto;
+    }
+}
+
+::ng-deep .mat-mdc-dialog-container .mdc-dialog__surface{
+    border-radius: 10px !important;
+}

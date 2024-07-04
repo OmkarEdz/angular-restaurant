@@ -1,0 +1,153 @@
+::ng-deep .rec_dia_popup_wrapper {
+::ng-deep .mat-mdc-dialog-container {
+    background: #fff;
+    .modal-window {
+        min-width: 600px;
+        max-width: 600px;
+        max-height: 85vh;
+        overflow-y: auto !important;
+        position: relative;
+
+        button {
+            cursor: pointer;
+        }
+
+        .popup_head {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+
+            .popup_actions {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                justify-content: flex-end;position:relative;
+
+                button {
+                    padding:0px;
+                    min-width: 35px;
+                    margin-right:0px;
+                    text-align: right;
+                    background: transparent;
+                    line-height: 1;height: auto;
+                    justify-content: end;margin-top: 0px;
+
+                    ::ng-deep .mdc-button__ripple {
+                        display: none;
+                    }
+
+                    &:hover {
+                        background: transparent;
+                    }
+
+                    @media screen and (max-width: 600px) {
+                        padding:0px 5px;
+                        min-width: 30px;
+                    }
+
+                    ::ng-deep .mat-icon {
+                        @media screen and (max-width: 600px) {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+
+        
+        ::ng-deep .mat-mdc-dialog-content {
+                margin: 0;
+                padding: 0;
+                max-height: unset;
+                width: 100%;
+                line-height: 1;
+                .popup_inner {
+                    
+                    .popup_inner_head {
+                        margin:0px 0px 15px;
+                        font-size: 18px;
+                    }
+
+                    .popup_inner_para {
+                        font-size: 14px;
+                        line-height: 1.5;
+                        margin: 0px 0px 10px;
+                    }
+
+                    .popup_time_para {
+                        display: flex;
+                        align-items: center;
+                        font-size: 14px;
+                        font-weight: 600;
+
+                        mat-icon {
+                            width: 16px; height: 16px; font-size: 16px; margin-right: 5px;position: relative;
+                            top: -1px;
+                        }
+                    }
+
+                    .recp_img_wrap {
+                        position: relative;
+                        border-radius: 20px;
+                        overflow: hidden;
+
+                        .prem_icon_img {
+                            max-width: 40px;
+                            position: absolute;
+                            height: 40px;
+                            left: 15px;
+                            top: 15px;
+                        }
+
+                        button {
+                            background: transparent;
+                            border: none;
+                            position: absolute;
+                            left: 0;
+                            bottom: 0;
+                            right: 0;
+                            top: 0;
+                            width: 20%;
+                            margin: auto;
+                        }
+                    }
+
+                    img {
+                        width: 100%;
+                    }
+
+                    .ingred_para {
+                        margin: 10px 0px 5px;
+                        font-size: 14px;
+                        font-weight: 600;
+                    }
+
+                    .down_arrow {
+                        background: transparent;
+                        border: none;
+                        padding: 0px;
+                        line-height: 1;
+                        margin: 0 auto;
+                        width: 100%;
+
+                        mat-icon {
+                            width: 45px;
+                            height: 35px;
+                            font-size: 45px;
+                            line-height: 1;
+                        }
+                    }
+                }
+        }
+        @media screen and (max-width: 1200px) {
+            min-width: auto;
+        }
+        @media screen and (max-width: 768px) {
+            min-width: 95vw;
+            width: auto;
+        }
+    }
+}
+}

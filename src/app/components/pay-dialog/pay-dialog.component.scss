@@ -1,0 +1,98 @@
+.modal-window {
+    min-width: 400px;
+    max-width: 400px;
+    max-height: 85vh;
+    overflow-y: auto !important;
+    position: relative;
+
+    button {
+        cursor: pointer;
+    }
+
+    .popup_head {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+
+        .popup_actions {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: flex-end;position:relative;
+
+            button {
+                padding:0px;
+                min-width: 35px;
+                margin-right:0px;
+                text-align: right;
+                background: transparent;
+                line-height: 1;
+
+                &:hover {
+                    background: transparent;
+                }
+
+                @media screen and (max-width: 600px) {
+                    padding:0px 5px;
+                    min-width: 30px;
+                }
+
+                ::ng-deep .mat-icon {
+                    @media screen and (max-width: 600px) {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    
+    ::ng-deep .mat-mdc-dialog-content {
+            margin: 0;
+            padding: 0;
+            max-height: unset;
+            width: 100%;
+            line-height: 1;
+
+            .pay_text {
+                margin:30px 0px 20px;
+                font-weight: 600;
+            }
+            
+            .ful_btn_black {
+                background: #000;
+                width: 100%;
+                border-radius: 30px;
+                color: #fff;
+                border:1px solid #000;
+                font-weight: 600;
+
+                ::ng-deep .mdc-button__label {
+                    color: #fff;
+                }
+
+                ::ng-deep .mdc-button__ripple {
+                    display: none;
+                }
+
+                &:hover {
+                    color: #000;
+                    border:1px solid #000;
+                    background: #fff;
+
+                    ::ng-deep .mdc-button__label {
+                        color: #000;
+                    }
+                }
+            }
+    }
+    @media screen and (max-width: 1200px) {
+        min-width: auto;
+    }
+    @media screen and (max-width: 768px) {
+        min-width: 95vw;
+        width: auto;
+    }
+}

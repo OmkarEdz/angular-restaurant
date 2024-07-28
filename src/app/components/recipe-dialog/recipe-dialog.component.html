@@ -11,11 +11,16 @@
                 you straight to Italy! With its simple yet flavourful combination of fresh basil, mozzarella, and tomato sauce, your 
                 taste buds will be singing “ That’s amore!” in no time. </p>
             <p class="popup_time_para"><mat-icon>access_time</mat-icon> Ready in under 30 minutes</p>
-            <div class="recp_img_wrap">
+            <!-- <div class="recp_img_wrap">
                 <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/premium_icon.svg" class="prem_icon_img" alt="Image" />
                 <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/rec_vid_thumbnail.jpg" alt="Image" />
                 <button (click)="openPayDialog()"><img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/play-button-arrowhead.png" alt="Image" /></button>
-            </div>
+            </div> -->
+            <div class="recp_video_wrap">
+                <video id="my-video" class="video-js vjs-default-skin" controls preload="auto">
+                    <source src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/sample_video.mp4" type="video/mp4">
+                </video>      
+            </div>        
             <p class="ingred_para">Frozen garlic toast, pizza sauce, pepperoni, black olive...more</p>
             <button class="down_arrow" (click)="openPayDialog()"><mat-icon>keyboard_arrow_down</mat-icon></button>
         </div>

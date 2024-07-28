@@ -14,7 +14,7 @@ import { Location } from '@angular/common';
 })
 export class RestaurantDetailComponent implements OnInit {
   constructor(
-    private route: Router, 
+    private router: Router,
     private location: Location, 
     private dialog: MatDialog, 
     @Inject(OverlayContainer) private overlayContainer: OverlayContainer
@@ -54,5 +54,10 @@ export class RestaurantDetailComponent implements OnInit {
     dialogRef.afterClosed().subscribe(() => {
       containerElement.classList.remove('add_item_popup_wrapper');
     });
+  }
+
+  redirectToCart() {
+    this.router.navigate(['/cart']).then(() => {
+    }).catch(() => {});
   }
 }

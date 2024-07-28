@@ -14,20 +14,21 @@ import { SaveAddressDialogComponent } from '../save-address-dialog/save-address-
   templateUrl: './cart-page.component.html',
   styleUrls: ['./cart-page.component.scss']
 })
-export class CartPageComponent {
+export class CartPageComponent implements OnInit {
+  value: number = 0;
+
   constructor(
-    private route: Router, 
+    private router: Router, 
     private location: Location, 
     private dialog: MatDialog, 
     @Inject(OverlayContainer) private overlayContainer: OverlayContainer
   ) {}
+  
   ngOnInit(): void {}
 
   backtopage() {
     this.location.back();
   }
-
-  value: number = 0;
 
   handleMinus() {
     this.value--;  
@@ -64,6 +65,14 @@ export class CartPageComponent {
 
     dialogRef.afterClosed().subscribe(() => {
       containerElement.classList.remove('save_add_popup_wrapper');
+    });
+  }
+
+  redirectToRest() {
+    this.router.navigate(['/restaurant-detail']).then(() => {
+      // Close the dialog if necessary
+    }).catch(() => {
+      // Handle navigation error
     });
   }
 }

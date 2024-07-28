@@ -124,6 +124,19 @@
                         font-weight: 600;
                     }
 
+                    .recp_video_wrap {
+                        position: relative;
+                        padding-bottom: 56%;
+                        margin-bottom: 10px;
+
+                        video {
+                            position: absolute;
+                            width: 100%;
+                            top: 0px;
+                            left: 0px;
+                        }
+                    }
+
                     .down_arrow {
                         background: transparent;
                         border: none;

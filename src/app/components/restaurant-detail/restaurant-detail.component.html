@@ -34,72 +34,580 @@
                 <button class="menu_tab_btn"> <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/nonveg.svg" alt="Icon" /> Nonveg </button>
                 <button class="menu_tab_btn"> <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/bestseller.svg" alt="Icon" /> Bestseller </button>
             </div>
-            <div class="menu_listing_wrap">
-              <mat-expansion-panel [expanded]="true">
-                <mat-expansion-panel-header>
-                  <mat-panel-title>
-                    Recommended  
-                  </mat-panel-title>
-                </mat-expansion-panel-header>
-                <div class="rest_menu_list_wrap">
-                    <div class="rest_menu_list_item">
-                        <div class="rest_menu_cont">
-                            <p class="rest_menu_status"><img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/red_icon.svg" /> Bestseller</p>
-                            <h4>Farmhouse Pizza</h4>
-                            <p class="restaurants_rating">₹ 269 • <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/green_review.svg" alt="Restaurants Image"> 4.3</p>
-                            <p class="menu_desc"  appTruncateText>Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese</p>
-                            <button class="recp_btn_menu" mat-button (click)="openRecipeDet()">RECIPE <mat-icon>keyboard_arrow_down</mat-icon></button>
+            <mat-accordion [multi]="false">
+                <div class="menu_listing_wrap">
+                <mat-expansion-panel [expanded]="true">
+                    <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Recommended  
+                    </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <div class="rest_menu_list_wrap">
+                        <div class="rest_menu_list_item">
+                            <div class="rest_menu_cont">
+                                <p class="rest_menu_status"><img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/red_icon.svg" /> Bestseller</p>
+                                <h4>Farmhouse Pizza</h4>
+                                <p class="restaurants_rating">₹ 269 • <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/green_review.svg" alt="Restaurants Image"> 4.3</p>
+                                <p class="menu_desc"  appTruncateText>Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese</p>
+                                <button class="recp_btn_menu" mat-button (click)="openRecipeDet()">RECIPE <mat-icon>keyboard_arrow_down</mat-icon></button>
+                            </div>
+                            <div class="rest_menu_img">
+                                <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/rest_menu.png" alt="Pizza Image" />
+                                <button class="add_btn_menu" (click)="openAddItem()" mat-button>Add <mat-icon>add</mat-icon></button>
+                                <p>Customisable</p>
+                            </div>
                         </div>
-                        <div class="rest_menu_img">
-                            <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/rest_menu.png" alt="Pizza Image" />
-                            <button class="add_btn_menu" (click)="openAddItem()" mat-button>Add <mat-icon>add</mat-icon></button>
-                            <p>Customisable</p>
+                        <div class="rest_menu_list_item">
+                            <div class="rest_menu_cont">
+                                <p class="rest_menu_status"><img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/red_icon.svg" /> Bestseller</p>
+                                <h4>Farmhouse Pizza</h4>
+                                <p class="restaurants_rating">₹ 269 • <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/green_review.svg" alt="Restaurants Image"> 4.3</p>
+                                <p class="menu_desc"  appTruncateText>Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese</p>
+                                <button class="recp_btn_menu" mat-button (click)="openRecipeDet()">RECIPE <mat-icon>keyboard_arrow_down</mat-icon></button>
+                            </div>
+                            <div class="rest_menu_img">
+                                <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/rest_menu.png" alt="Pizza Image" />
+                                <button class="add_btn_menu" (click)="openAddItem()" mat-button>Add <mat-icon>add</mat-icon></button>
+                                <p>Customisable</p>
+                            </div>
+                        </div>
+                        <div class="rest_menu_list_item">
+                            <div class="rest_menu_cont">
+                                <p class="rest_menu_status"><img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/red_icon.svg" /> Bestseller</p>
+                                <h4>Farmhouse Pizza</h4>
+                                <p class="restaurants_rating">₹ 269 • <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/green_review.svg" alt="Restaurants Image"> 4.3</p>
+                                <p class="menu_desc"  appTruncateText>Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese</p>
+                                <button class="recp_btn_menu" mat-button (click)="openRecipeDet()">RECIPE <mat-icon>keyboard_arrow_down</mat-icon></button>
+                            </div>
+                            <div class="rest_menu_img">
+                                <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/rest_menu.png" alt="Pizza Image" />
+                                <button class="add_btn_menu" (click)="openAddItem()" mat-button>Add <mat-icon>add</mat-icon></button>
+                                <p>Customisable</p>
+                            </div>
+                        </div>
+                        <div class="rest_menu_list_item">
+                            <div class="rest_menu_cont">
+                                <p class="rest_menu_status"><img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/red_icon.svg" /> Bestseller</p>
+                                <h4>Farmhouse Pizza</h4>
+                                <p class="restaurants_rating">₹ 269 • <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/green_review.svg" alt="Restaurants Image"> 4.3</p>
+                                <p class="menu_desc"  appTruncateText>Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese</p>
+                                <button class="recp_btn_menu" mat-button (click)="openRecipeDet()">RECIPE <mat-icon>keyboard_arrow_down</mat-icon></button>
+                            </div>
+                            <div class="rest_menu_img">
+                                <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/rest_menu.png" alt="Pizza Image" />
+                                <button class="add_btn_menu" (click)="openAddItem()" mat-button>Add <mat-icon>add</mat-icon></button>
+                                <p>Customisable</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="rest_menu_list_item">
-                        <div class="rest_menu_cont">
-                            <p class="rest_menu_status"><img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/red_icon.svg" /> Bestseller</p>
-                            <h4>Farmhouse Pizza</h4>
-                            <p class="restaurants_rating">₹ 269 • <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/green_review.svg" alt="Restaurants Image"> 4.3</p>
-                            <p class="menu_desc"  appTruncateText>Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese</p>
-                            <button class="recp_btn_menu" mat-button (click)="openRecipeDet()">RECIPE <mat-icon>keyboard_arrow_down</mat-icon></button>
+                </mat-expansion-panel>
+                <div class="pannel_inner">
+                    <p class="explansion_head">Sushi</p>
+                    <mat-expansion-panel [expanded]="false">
+                        <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Veg Sushi  
+                        </mat-panel-title>
+                        </mat-expansion-panel-header>
+                        <div class="rest_menu_list_wrap">
+                            <div class="rest_menu_list_item">
+                                <div class="rest_menu_cont">
+                                    <p class="rest_menu_status"><img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/red_icon.svg" /> Bestseller</p>
+                                    <h4>Farmhouse Pizza</h4>
+                                    <p class="restaurants_rating">₹ 269 • <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/green_review.svg" alt="Restaurants Image"> 4.3</p>
+                                    <p class="menu_desc"  appTruncateText>Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese</p>
+                                    <button class="recp_btn_menu" mat-button (click)="openRecipeDet()">RECIPE <mat-icon>keyboard_arrow_down</mat-icon></button>
+                                </div>
+                                <div class="rest_menu_img">
+                                    <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/rest_menu.png" alt="Pizza Image" />
+                                    <button class="add_btn_menu" (click)="openAddItem()" mat-button>Add <mat-icon>add</mat-icon></button>
+                                    <p>Customisable</p>
+                                </div>
+                            </div>
+                            <div class="rest_menu_list_item">
+                                <div class="rest_menu_cont">
+                                    <p class="rest_menu_status"><img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/red_icon.svg" /> Bestseller</p>
+                                    <h4>Farmhouse Pizza</h4>
+                                    <p class="restaurants_rating">₹ 269 • <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/green_review.svg" alt="Restaurants Image"> 4.3</p>
+                                    <p class="menu_desc"  appTruncateText>Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese</p>
+                                    <button class="recp_btn_menu" mat-button (click)="openRecipeDet()">RECIPE <mat-icon>keyboard_arrow_down</mat-icon></button>
+                                </div>
+                                <div class="rest_menu_img">
+                                    <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/rest_menu.png" alt="Pizza Image" />
+                                    <button class="add_btn_menu" (click)="openAddItem()" mat-button>Add <mat-icon>add</mat-icon></button>
+                                    <p>Customisable</p>
+                                </div>
+                            </div>
+                            <div class="rest_menu_list_item">
+                                <div class="rest_menu_cont">
+                                    <p class="rest_menu_status"><img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/red_icon.svg" /> Bestseller</p>
+                                    <h4>Farmhouse Pizza</h4>
+                                    <p class="restaurants_rating">₹ 269 • <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/green_review.svg" alt="Restaurants Image"> 4.3</p>
+                                    <p class="menu_desc"  appTruncateText>Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese</p>
+                                    <button class="recp_btn_menu" mat-button (click)="openRecipeDet()">RECIPE <mat-icon>keyboard_arrow_down</mat-icon></button>
+                                </div>
+                                <div class="rest_menu_img">
+                                    <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/rest_menu.png" alt="Pizza Image" />
+                                    <button class="add_btn_menu" (click)="openAddItem()" mat-button>Add <mat-icon>add</mat-icon></button>
+                                    <p>Customisable</p>
+                                </div>
+                            </div>
+                            <div class="rest_menu_list_item">
+                                <div class="rest_menu_cont">
+                                    <p class="rest_menu_status"><img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/red_icon.svg" /> Bestseller</p>
+                                    <h4>Farmhouse Pizza</h4>
+                                    <p class="restaurants_rating">₹ 269 • <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/green_review.svg" alt="Restaurants Image"> 4.3</p>
+                                    <p class="menu_desc"  appTruncateText>Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese</p>
+                                    <button class="recp_btn_menu" mat-button (click)="openRecipeDet()">RECIPE <mat-icon>keyboard_arrow_down</mat-icon></button>
+                                </div>
+                                <div class="rest_menu_img">
+                                    <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/rest_menu.png" alt="Pizza Image" />
+                                    <button class="add_btn_menu" (click)="openAddItem()" mat-button>Add <mat-icon>add</mat-icon></button>
+                                    <p>Customisable</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="rest_menu_img">
-                            <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/rest_menu.png" alt="Pizza Image" />
-                            <button class="add_btn_menu" (click)="openAddItem()" mat-button>Add <mat-icon>add</mat-icon></button>
-                            <p>Customisable</p>
+                    </mat-expansion-panel>
+                    <mat-expansion-panel [expanded]="false">
+                        <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Non veg Sushi  
+                        </mat-panel-title>
+                        </mat-expansion-panel-header>
+                        <div class="rest_menu_list_wrap">
+                            <div class="rest_menu_list_item">
+                                <div class="rest_menu_cont">
+                                    <p class="rest_menu_status"><img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/red_icon.svg" /> Bestseller</p>
+                                    <h4>Farmhouse Pizza</h4>
+                                    <p class="restaurants_rating">₹ 269 • <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/green_review.svg" alt="Restaurants Image"> 4.3</p>
+                                    <p class="menu_desc"  appTruncateText>Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese</p>
+                                    <button class="recp_btn_menu" mat-button (click)="openRecipeDet()">RECIPE <mat-icon>keyboard_arrow_down</mat-icon></button>
+                                </div>
+                                <div class="rest_menu_img">
+                                    <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/rest_menu.png" alt="Pizza Image" />
+                                    <button class="add_btn_menu" (click)="openAddItem()" mat-button>Add <mat-icon>add</mat-icon></button>
+                                    <p>Customisable</p>
+                                </div>
+                            </div>
+                            <div class="rest_menu_list_item">
+                                <div class="rest_menu_cont">
+                                    <p class="rest_menu_status"><img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/red_icon.svg" /> Bestseller</p>
+                                    <h4>Farmhouse Pizza</h4>
+                                    <p class="restaurants_rating">₹ 269 • <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/green_review.svg" alt="Restaurants Image"> 4.3</p>
+                                    <p class="menu_desc"  appTruncateText>Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese</p>
+                                    <button class="recp_btn_menu" mat-button (click)="openRecipeDet()">RECIPE <mat-icon>keyboard_arrow_down</mat-icon></button>
+                                </div>
+                                <div class="rest_menu_img">
+                                    <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/rest_menu.png" alt="Pizza Image" />
+                                    <button class="add_btn_menu" (click)="openAddItem()" mat-button>Add <mat-icon>add</mat-icon></button>
+                                    <p>Customisable</p>
+                                </div>
+                            </div>
+                            <div class="rest_menu_list_item">
+                                <div class="rest_menu_cont">
+                                    <p class="rest_menu_status"><img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/red_icon.svg" /> Bestseller</p>
+                                    <h4>Farmhouse Pizza</h4>
+                                    <p class="restaurants_rating">₹ 269 • <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/green_review.svg" alt="Restaurants Image"> 4.3</p>
+                                    <p class="menu_desc"  appTruncateText>Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese</p>
+                                    <button class="recp_btn_menu" mat-button (click)="openRecipeDet()">RECIPE <mat-icon>keyboard_arrow_down</mat-icon></button>
+                                </div>
+                                <div class="rest_menu_img">
+                                    <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/rest_menu.png" alt="Pizza Image" />
+                                    <button class="add_btn_menu" (click)="openAddItem()" mat-button>Add <mat-icon>add</mat-icon></button>
+                                    <p>Customisable</p>
+                                </div>
+                            </div>
+                            <div class="rest_menu_list_item">
+                                <div class="rest_menu_cont">
+                                    <p class="rest_menu_status"><img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/red_icon.svg" /> Bestseller</p>
+                                    <h4>Farmhouse Pizza</h4>
+                                    <p class="restaurants_rating">₹ 269 • <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/green_review.svg" alt="Restaurants Image"> 4.3</p>
+                                    <p class="menu_desc"  appTruncateText>Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese</p>
+                                    <button class="recp_btn_menu" mat-button (click)="openRecipeDet()">RECIPE <mat-icon>keyboard_arrow_down</mat-icon></button>
+                                </div>
+                                <div class="rest_menu_img">
+                                    <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/rest_menu.png" alt="Pizza Image" />
+                                    <button class="add_btn_menu" (click)="openAddItem()" mat-button>Add <mat-icon>add</mat-icon></button>
+                                    <p>Customisable</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="rest_menu_list_item">
-                        <div class="rest_menu_cont">
-                            <p class="rest_menu_status"><img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/red_icon.svg" /> Bestseller</p>
-                            <h4>Farmhouse Pizza</h4>
-                            <p class="restaurants_rating">₹ 269 • <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/green_review.svg" alt="Restaurants Image"> 4.3</p>
-                            <p class="menu_desc"  appTruncateText>Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese</p>
-                            <button class="recp_btn_menu" mat-button (click)="openRecipeDet()">RECIPE <mat-icon>keyboard_arrow_down</mat-icon></button>
+                    </mat-expansion-panel>
+                    <mat-expansion-panel [expanded]="false">
+                        <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Seafood Sushi  
+                        </mat-panel-title>
+                        </mat-expansion-panel-header>
+                        <div class="rest_menu_list_wrap">
+                            <div class="rest_menu_list_item">
+                                <div class="rest_menu_cont">
+                                    <p class="rest_menu_status"><img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/red_icon.svg" /> Bestseller</p>
+                                    <h4>Farmhouse Pizza</h4>
+                                    <p class="restaurants_rating">₹ 269 • <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/green_review.svg" alt="Restaurants Image"> 4.3</p>
+                                    <p class="menu_desc"  appTruncateText>Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese</p>
+                                    <button class="recp_btn_menu" mat-button (click)="openRecipeDet()">RECIPE <mat-icon>keyboard_arrow_down</mat-icon></button>
+                                </div>
+                                <div class="rest_menu_img">
+                                    <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/rest_menu.png" alt="Pizza Image" />
+                                    <button class="add_btn_menu" (click)="openAddItem()" mat-button>Add <mat-icon>add</mat-icon></button>
+                                    <p>Customisable</p>
+                                </div>
+                            </div>
+                            <div class="rest_menu_list_item">
+                                <div class="rest_menu_cont">
+                                    <p class="rest_menu_status"><img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/red_icon.svg" /> Bestseller</p>
+                                    <h4>Farmhouse Pizza</h4>
+                                    <p class="restaurants_rating">₹ 269 • <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/green_review.svg" alt="Restaurants Image"> 4.3</p>
+                                    <p class="menu_desc"  appTruncateText>Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese</p>
+                                    <button class="recp_btn_menu" mat-button (click)="openRecipeDet()">RECIPE <mat-icon>keyboard_arrow_down</mat-icon></button>
+                                </div>
+                                <div class="rest_menu_img">
+                                    <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/rest_menu.png" alt="Pizza Image" />
+                                    <button class="add_btn_menu" (click)="openAddItem()" mat-button>Add <mat-icon>add</mat-icon></button>
+                                    <p>Customisable</p>
+                                </div>
+                            </div>
+                            <div class="rest_menu_list_item">
+                                <div class="rest_menu_cont">
+                                    <p class="rest_menu_status"><img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/red_icon.svg" /> Bestseller</p>
+                                    <h4>Farmhouse Pizza</h4>
+                                    <p class="restaurants_rating">₹ 269 • <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/green_review.svg" alt="Restaurants Image"> 4.3</p>
+                                    <p class="menu_desc"  appTruncateText>Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese</p>
+                                    <button class="recp_btn_menu" mat-button (click)="openRecipeDet()">RECIPE <mat-icon>keyboard_arrow_down</mat-icon></button>
+                                </div>
+                                <div class="rest_menu_img">
+                                    <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/rest_menu.png" alt="Pizza Image" />
+                                    <button class="add_btn_menu" (click)="openAddItem()" mat-button>Add <mat-icon>add</mat-icon></button>
+                                    <p>Customisable</p>
+                                </div>
+                            </div>
+                            <div class="rest_menu_list_item">
+                                <div class="rest_menu_cont">
+                                    <p class="rest_menu_status"><img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/red_icon.svg" /> Bestseller</p>
+                                    <h4>Farmhouse Pizza</h4>
+                                    <p class="restaurants_rating">₹ 269 • <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/green_review.svg" alt="Restaurants Image"> 4.3</p>
+                                    <p class="menu_desc"  appTruncateText>Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese</p>
+                                    <button class="recp_btn_menu" mat-button (click)="openRecipeDet()">RECIPE <mat-icon>keyboard_arrow_down</mat-icon></button>
+                                </div>
+                                <div class="rest_menu_img">
+                                    <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/rest_menu.png" alt="Pizza Image" />
+                                    <button class="add_btn_menu" (click)="openAddItem()" mat-button>Add <mat-icon>add</mat-icon></button>
+                                    <p>Customisable</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="rest_menu_img">
-                            <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/rest_menu.png" alt="Pizza Image" />
-                            <button class="add_btn_menu" (click)="openAddItem()" mat-button>Add <mat-icon>add</mat-icon></button>
-                            <p>Customisable</p>
-                        </div>
-                    </div>
-                    <div class="rest_menu_list_item">
-                        <div class="rest_menu_cont">
-                            <p class="rest_menu_status"><img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/red_icon.svg" /> Bestseller</p>
-                            <h4>Farmhouse Pizza</h4>
-                            <p class="restaurants_rating">₹ 269 • <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/green_review.svg" alt="Restaurants Image"> 4.3</p>
-                            <p class="menu_desc"  appTruncateText>Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese</p>
-                            <button class="recp_btn_menu" mat-button (click)="openRecipeDet()">RECIPE <mat-icon>keyboard_arrow_down</mat-icon></button>
-                        </div>
-                        <div class="rest_menu_img">
-                            <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/rest_menu.png" alt="Pizza Image" />
-                            <button class="add_btn_menu" (click)="openAddItem()" mat-button>Add <mat-icon>add</mat-icon></button>
-                            <p>Customisable</p>
-                        </div>
-                    </div>
+                    </mat-expansion-panel>
                 </div>
-              </mat-expansion-panel>
+                <div class="pannel_inner">
+                    <p class="explansion_head">Dumplings</p>
+                    <mat-expansion-panel [expanded]="false">
+                        <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Veg Dumplings  
+                        </mat-panel-title>
+                        </mat-expansion-panel-header>
+                        <div class="rest_menu_list_wrap">
+                            <div class="rest_menu_list_item">
+                                <div class="rest_menu_cont">
+                                    <p class="rest_menu_status"><img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/red_icon.svg" /> Bestseller</p>
+                                    <h4>Farmhouse Pizza</h4>
+                                    <p class="restaurants_rating">₹ 269 • <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/green_review.svg" alt="Restaurants Image"> 4.3</p>
+                                    <p class="menu_desc"  appTruncateText>Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese</p>
+                                    <button class="recp_btn_menu" mat-button (click)="openRecipeDet()">RECIPE <mat-icon>keyboard_arrow_down</mat-icon></button>
+                                </div>
+                                <div class="rest_menu_img">
+                                    <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/rest_menu.png" alt="Pizza Image" />
+                                    <button class="add_btn_menu" (click)="openAddItem()" mat-button>Add <mat-icon>add</mat-icon></button>
+                                    <p>Customisable</p>
+                                </div>
+                            </div>
+                            <div class="rest_menu_list_item">
+                                <div class="rest_menu_cont">
+                                    <p class="rest_menu_status"><img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/red_icon.svg" /> Bestseller</p>
+                                    <h4>Farmhouse Pizza</h4>
+                                    <p class="restaurants_rating">₹ 269 • <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/green_review.svg" alt="Restaurants Image"> 4.3</p>
+                                    <p class="menu_desc"  appTruncateText>Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese</p>
+                                    <button class="recp_btn_menu" mat-button (click)="openRecipeDet()">RECIPE <mat-icon>keyboard_arrow_down</mat-icon></button>
+                                </div>
+                                <div class="rest_menu_img">
+                                    <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/rest_menu.png" alt="Pizza Image" />
+                                    <button class="add_btn_menu" (click)="openAddItem()" mat-button>Add <mat-icon>add</mat-icon></button>
+                                    <p>Customisable</p>
+                                </div>
+                            </div>
+                            <div class="rest_menu_list_item">
+                                <div class="rest_menu_cont">
+                                    <p class="rest_menu_status"><img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/red_icon.svg" /> Bestseller</p>
+                                    <h4>Farmhouse Pizza</h4>
+                                    <p class="restaurants_rating">₹ 269 • <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/green_review.svg" alt="Restaurants Image"> 4.3</p>
+                                    <p class="menu_desc"  appTruncateText>Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese</p>
+                                    <button class="recp_btn_menu" mat-button (click)="openRecipeDet()">RECIPE <mat-icon>keyboard_arrow_down</mat-icon></button>
+                                </div>
+                                <div class="rest_menu_img">
+                                    <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/rest_menu.png" alt="Pizza Image" />
+                                    <button class="add_btn_menu" (click)="openAddItem()" mat-button>Add <mat-icon>add</mat-icon></button>
+                                    <p>Customisable</p>
+                                </div>
+                            </div>
+                            <div class="rest_menu_list_item">
+                                <div class="rest_menu_cont">
+                                    <p class="rest_menu_status"><img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/red_icon.svg" /> Bestseller</p>
+                                    <h4>Farmhouse Pizza</h4>
+                                    <p class="restaurants_rating">₹ 269 • <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/green_review.svg" alt="Restaurants Image"> 4.3</p>
+                                    <p class="menu_desc"  appTruncateText>Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese</p>
+                                    <button class="recp_btn_menu" mat-button (click)="openRecipeDet()">RECIPE <mat-icon>keyboard_arrow_down</mat-icon></button>
+                                </div>
+                                <div class="rest_menu_img">
+                                    <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/rest_menu.png" alt="Pizza Image" />
+                                    <button class="add_btn_menu" (click)="openAddItem()" mat-button>Add <mat-icon>add</mat-icon></button>
+                                    <p>Customisable</p>
+                                </div>
+                            </div>
+                        </div>
+                    </mat-expansion-panel>
+                    <mat-expansion-panel [expanded]="false">
+                        <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Non veg Dumplings  
+                        </mat-panel-title>
+                        </mat-expansion-panel-header>
+                        <div class="rest_menu_list_wrap">
+                            <div class="rest_menu_list_item">
+                                <div class="rest_menu_cont">
+                                    <p class="rest_menu_status"><img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/red_icon.svg" /> Bestseller</p>
+                                    <h4>Farmhouse Pizza</h4>
+                                    <p class="restaurants_rating">₹ 269 • <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/green_review.svg" alt="Restaurants Image"> 4.3</p>
+                                    <p class="menu_desc"  appTruncateText>Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese</p>
+                                    <button class="recp_btn_menu" mat-button (click)="openRecipeDet()">RECIPE <mat-icon>keyboard_arrow_down</mat-icon></button>
+                                </div>
+                                <div class="rest_menu_img">
+                                    <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/rest_menu.png" alt="Pizza Image" />
+                                    <button class="add_btn_menu" (click)="openAddItem()" mat-button>Add <mat-icon>add</mat-icon></button>
+                                    <p>Customisable</p>
+                                </div>
+                            </div>
+                            <div class="rest_menu_list_item">
+                                <div class="rest_menu_cont">
+                                    <p class="rest_menu_status"><img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/red_icon.svg" /> Bestseller</p>
+                                    <h4>Farmhouse Pizza</h4>
+                                    <p class="restaurants_rating">₹ 269 • <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/green_review.svg" alt="Restaurants Image"> 4.3</p>
+                                    <p class="menu_desc"  appTruncateText>Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese</p>
+                                    <button class="recp_btn_menu" mat-button (click)="openRecipeDet()">RECIPE <mat-icon>keyboard_arrow_down</mat-icon></button>
+                                </div>
+                                <div class="rest_menu_img">
+                                    <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/rest_menu.png" alt="Pizza Image" />
+                                    <button class="add_btn_menu" (click)="openAddItem()" mat-button>Add <mat-icon>add</mat-icon></button>
+                                    <p>Customisable</p>
+                                </div>
+                            </div>
+                            <div class="rest_menu_list_item">
+                                <div class="rest_menu_cont">
+                                    <p class="rest_menu_status"><img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/red_icon.svg" /> Bestseller</p>
+                                    <h4>Farmhouse Pizza</h4>
+                                    <p class="restaurants_rating">₹ 269 • <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/green_review.svg" alt="Restaurants Image"> 4.3</p>
+                                    <p class="menu_desc"  appTruncateText>Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese</p>
+                                    <button class="recp_btn_menu" mat-button (click)="openRecipeDet()">RECIPE <mat-icon>keyboard_arrow_down</mat-icon></button>
+                                </div>
+                                <div class="rest_menu_img">
+                                    <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/rest_menu.png" alt="Pizza Image" />
+                                    <button class="add_btn_menu" (click)="openAddItem()" mat-button>Add <mat-icon>add</mat-icon></button>
+                                    <p>Customisable</p>
+                                </div>
+                            </div>
+                            <div class="rest_menu_list_item">
+                                <div class="rest_menu_cont">
+                                    <p class="rest_menu_status"><img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/red_icon.svg" /> Bestseller</p>
+                                    <h4>Farmhouse Pizza</h4>
+                                    <p class="restaurants_rating">₹ 269 • <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/green_review.svg" alt="Restaurants Image"> 4.3</p>
+                                    <p class="menu_desc"  appTruncateText>Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese</p>
+                                    <button class="recp_btn_menu" mat-button (click)="openRecipeDet()">RECIPE <mat-icon>keyboard_arrow_down</mat-icon></button>
+                                </div>
+                                <div class="rest_menu_img">
+                                    <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/rest_menu.png" alt="Pizza Image" />
+                                    <button class="add_btn_menu" (click)="openAddItem()" mat-button>Add <mat-icon>add</mat-icon></button>
+                                    <p>Customisable</p>
+                                </div>
+                            </div>
+                        </div>
+                    </mat-expansion-panel>
+                </div>
+                <div class="pannel_inner">
+                    <p class="explansion_head">Breakfast</p>
+                    <mat-expansion-panel [expanded]="false">
+                        <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            All Day Breakfast
+                        </mat-panel-title>
+                        </mat-expansion-panel-header>
+                        <div class="rest_menu_list_wrap">
+                            <div class="rest_menu_list_item">
+                                <div class="rest_menu_cont">
+                                    <p class="rest_menu_status"><img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/red_icon.svg" /> Bestseller</p>
+                                    <h4>Farmhouse Pizza</h4>
+                                    <p class="restaurants_rating">₹ 269 • <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/green_review.svg" alt="Restaurants Image"> 4.3</p>
+                                    <p class="menu_desc"  appTruncateText>Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese</p>
+                                    <button class="recp_btn_menu" mat-button (click)="openRecipeDet()">RECIPE <mat-icon>keyboard_arrow_down</mat-icon></button>
+                                </div>
+                                <div class="rest_menu_img">
+                                    <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/rest_menu.png" alt="Pizza Image" />
+                                    <button class="add_btn_menu" (click)="openAddItem()" mat-button>Add <mat-icon>add</mat-icon></button>
+                                    <p>Customisable</p>
+                                </div>
+                            </div>
+                            <div class="rest_menu_list_item">
+                                <div class="rest_menu_cont">
+                                    <p class="rest_menu_status"><img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/red_icon.svg" /> Bestseller</p>
+                                    <h4>Farmhouse Pizza</h4>
+                                    <p class="restaurants_rating">₹ 269 • <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/green_review.svg" alt="Restaurants Image"> 4.3</p>
+                                    <p class="menu_desc"  appTruncateText>Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese</p>
+                                    <button class="recp_btn_menu" mat-button (click)="openRecipeDet()">RECIPE <mat-icon>keyboard_arrow_down</mat-icon></button>
+                                </div>
+                                <div class="rest_menu_img">
+                                    <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/rest_menu.png" alt="Pizza Image" />
+                                    <button class="add_btn_menu" (click)="openAddItem()" mat-button>Add <mat-icon>add</mat-icon></button>
+                                    <p>Customisable</p>
+                                </div>
+                            </div>
+                            <div class="rest_menu_list_item">
+                                <div class="rest_menu_cont">
+                                    <p class="rest_menu_status"><img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/red_icon.svg" /> Bestseller</p>
+                                    <h4>Farmhouse Pizza</h4>
+                                    <p class="restaurants_rating">₹ 269 • <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/green_review.svg" alt="Restaurants Image"> 4.3</p>
+                                    <p class="menu_desc"  appTruncateText>Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese</p>
+                                    <button class="recp_btn_menu" mat-button (click)="openRecipeDet()">RECIPE <mat-icon>keyboard_arrow_down</mat-icon></button>
+                                </div>
+                                <div class="rest_menu_img">
+                                    <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/rest_menu.png" alt="Pizza Image" />
+                                    <button class="add_btn_menu" (click)="openAddItem()" mat-button>Add <mat-icon>add</mat-icon></button>
+                                    <p>Customisable</p>
+                                </div>
+                            </div>
+                            <div class="rest_menu_list_item">
+                                <div class="rest_menu_cont">
+                                    <p class="rest_menu_status"><img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/red_icon.svg" /> Bestseller</p>
+                                    <h4>Farmhouse Pizza</h4>
+                                    <p class="restaurants_rating">₹ 269 • <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/green_review.svg" alt="Restaurants Image"> 4.3</p>
+                                    <p class="menu_desc"  appTruncateText>Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese</p>
+                                    <button class="recp_btn_menu" mat-button (click)="openRecipeDet()">RECIPE <mat-icon>keyboard_arrow_down</mat-icon></button>
+                                </div>
+                                <div class="rest_menu_img">
+                                    <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/rest_menu.png" alt="Pizza Image" />
+                                    <button class="add_btn_menu" (click)="openAddItem()" mat-button>Add <mat-icon>add</mat-icon></button>
+                                    <p>Customisable</p>
+                                </div>
+                            </div>
+                        </div>
+                    </mat-expansion-panel>
+                    <mat-expansion-panel [expanded]="false">
+                        <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            All Day Omelets
+                        </mat-panel-title>
+                        </mat-expansion-panel-header>
+                        <div class="rest_menu_list_wrap">
+                            <div class="rest_menu_list_item">
+                                <div class="rest_menu_cont">
+                                    <p class="rest_menu_status"><img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/red_icon.svg" /> Bestseller</p>
+                                    <h4>Farmhouse Pizza</h4>
+                                    <p class="restaurants_rating">₹ 269 • <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/green_review.svg" alt="Restaurants Image"> 4.3</p>
+                                    <p class="menu_desc"  appTruncateText>Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese</p>
+                                    <button class="recp_btn_menu" mat-button (click)="openRecipeDet()">RECIPE <mat-icon>keyboard_arrow_down</mat-icon></button>
+                                </div>
+                                <div class="rest_menu_img">
+                                    <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/rest_menu.png" alt="Pizza Image" />
+                                    <button class="add_btn_menu" (click)="openAddItem()" mat-button>Add <mat-icon>add</mat-icon></button>
+                                    <p>Customisable</p>
+                                </div>
+                            </div>
+                            <div class="rest_menu_list_item">
+                                <div class="rest_menu_cont">
+                                    <p class="rest_menu_status"><img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/red_icon.svg" /> Bestseller</p>
+                                    <h4>Farmhouse Pizza</h4>
+                                    <p class="restaurants_rating">₹ 269 • <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/green_review.svg" alt="Restaurants Image"> 4.3</p>
+                                    <p class="menu_desc"  appTruncateText>Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese</p>
+                                    <button class="recp_btn_menu" mat-button (click)="openRecipeDet()">RECIPE <mat-icon>keyboard_arrow_down</mat-icon></button>
+                                </div>
+                                <div class="rest_menu_img">
+                                    <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/rest_menu.png" alt="Pizza Image" />
+                                    <button class="add_btn_menu" (click)="openAddItem()" mat-button>Add <mat-icon>add</mat-icon></button>
+                                    <p>Customisable</p>
+                                </div>
+                            </div>
+                            <div class="rest_menu_list_item">
+                                <div class="rest_menu_cont">
+                                    <p class="rest_menu_status"><img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/red_icon.svg" /> Bestseller</p>
+                                    <h4>Farmhouse Pizza</h4>
+                                    <p class="restaurants_rating">₹ 269 • <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/green_review.svg" alt="Restaurants Image"> 4.3</p>
+                                    <p class="menu_desc"  appTruncateText>Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese</p>
+                                    <button class="recp_btn_menu" mat-button (click)="openRecipeDet()">RECIPE <mat-icon>keyboard_arrow_down</mat-icon></button>
+                                </div>
+                                <div class="rest_menu_img">
+                                    <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/rest_menu.png" alt="Pizza Image" />
+                                    <button class="add_btn_menu" (click)="openAddItem()" mat-button>Add <mat-icon>add</mat-icon></button>
+                                    <p>Customisable</p>
+                                </div>
+                            </div>
+                            <div class="rest_menu_list_item">
+                                <div class="rest_menu_cont">
+                                    <p class="rest_menu_status"><img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/red_icon.svg" /> Bestseller</p>
+                                    <h4>Farmhouse Pizza</h4>
+                                    <p class="restaurants_rating">₹ 269 • <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/green_review.svg" alt="Restaurants Image"> 4.3</p>
+                                    <p class="menu_desc"  appTruncateText>Classic delight with 100% real mozzarella Classic delight with 100% real mozzarella cheese</p>
+                                    <button class="recp_btn_menu" mat-button (click)="openRecipeDet()">RECIPE <mat-icon>keyboard_arrow_down</mat-icon></button>
+                                </div>
+                                <div class="rest_menu_img">
+                                    <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/rest_menu.png" alt="Pizza Image" />
+                                    <button class="add_btn_menu" (click)="openAddItem()" mat-button>Add <mat-icon>add</mat-icon></button>
+                                    <p>Customisable</p>
+                                </div>
+                            </div>
+                        </div>
+                    </mat-expansion-panel>
+                </div>
+                </div>
+            </mat-accordion>
+
+            <div class="menu_opts">
+                <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                    Menu <mat-icon>restaurant_menu</mat-icon>
+                  </button>
+                  <mat-menu #menu="matMenu" class="menu_opts_item">
+                    <button mat-menu-item class="active">
+                      <span>Recommended</span> <span class="count">10</span>
+                    </button>
+                    <button mat-menu-item>
+                      <span>Sushi</span> <span class="count">6</span>
+                    </button>
+                    <button mat-menu-item>
+                      <span>Dumpling</span> <span class="count">12</span>
+                    </button>
+                    <button mat-menu-item>
+                      <span>Neopolitan Pizzas</span> <span class="count">8</span>
+                    </button>
+                    <button mat-menu-item>
+                      <span>Continental</span> <span class="count">7</span>
+                    </button>
+                    <button mat-menu-item>
+                      <span>Chefs Special</span> <span class="count">15</span>
+                    </button>
+                    <button mat-menu-item>
+                      <span>Soups</span> <span class="count">8</span>
+                    </button>
+                    <button mat-menu-item>
+                      <span>Salads</span> <span class="count">6</span>
+                    </button>
+                  </mat-menu>                  
+            </div>
+
+            <div class="view_cart_wrap">
+                <div class="left_view_cart_wrap">
+                    <p class="cart_count">1 item | 179</p>
+                    <p class="cart_note">Extra charges may apply</p>
+                </div>        
+                <div class="right_view_cart_wrap">
+                    <a class="right_view_cart_link" mat-button (click)="redirectToCart()">View Cart</a>
+                </div>   
             </div>
         </div>
     </div>

@@ -1,20 +1,15 @@
 import { Component, OnInit, AfterViewInit, ViewEncapsulation, Inject  } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { AddressComponent } from '../address/address.component';
+import { AddressComponent } from '../../address/address.component';
 import { OverlayContainer } from '@angular/cdk/overlay';
 import { Router } from '@angular/router';
-import { AllRestaurantsListComponent } from './all-restaurants-list/all-restaurants-list.component';
-
-
-declare var $: any;
 
 @Component({
-  selector: 'app-all-restaurants',
-  templateUrl: './all-restaurants.component.html',
-  styleUrls: ['./all-restaurants.component.scss'],
-  encapsulation: ViewEncapsulation.None
+  selector: 'app-all-restaurants-list',
+  templateUrl: './all-restaurants-list.component.html',
+  styleUrls: ['./all-restaurants-list.component.scss']
 })
-export class AllRestaurantsComponent implements OnInit {
+export class AllRestaurantsListComponent implements OnInit {
   constructor(private route: Router, private dialog: MatDialog, @Inject(OverlayContainer) private overlayContainer: OverlayContainer) {}
 
   ngOnInit(): void {

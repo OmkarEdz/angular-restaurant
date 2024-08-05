@@ -1,0 +1,156 @@
+::ng-deep .rec_more_popup_wrapper {
+    ::ng-deep .mat-mdc-dialog-container {
+        background: #fff;
+        .modal-window {
+            min-width: 600px;
+            max-width: 600px;
+            max-height: 85vh;
+            overflow-y: auto !important;
+            position: relative;
+    
+            button {
+                cursor: pointer;
+            }
+    
+            .popup_head {
+                display: flex;
+                align-items: center;
+                position: absolute;
+                top: 0px;
+                right: 0px;
+    
+                .popup_actions {
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    justify-content: flex-end;position:relative;
+    
+                    button {
+                        padding:0px;
+                        min-width: 35px;
+                        margin-right:0px;
+                        text-align: right;
+                        background: transparent;
+                        line-height: 1;height: auto;
+                        justify-content: end;margin-top: 0px;
+    
+                        ::ng-deep .mdc-button__ripple {
+                            display: none;
+                        }
+    
+                        &:hover {
+                            background: transparent;
+                        }
+    
+                        @media screen and (max-width: 600px) {
+                            padding:0px 5px;
+                            min-width: 30px;
+                        }
+    
+                        ::ng-deep .mat-icon {
+                            @media screen and (max-width: 600px) {
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+    
+            
+            ::ng-deep .mat-mdc-dialog-content {
+                    margin: 0;
+                    padding: 0;
+                    max-height: unset;
+                    width: 100%;
+                    line-height: 1;
+                    .popup_inner {
+                        
+                        .more-details-wrapper {
+                            display: flex;
+                            align-items: center;
+
+                            .more-details-img-wrapper {
+                                width: 50%;
+
+                                img {
+                                    width: 100%;
+                                }
+                            }
+
+                            .more-details-cont-wrapper {
+                                width: 50%;text-align: center;
+                                padding: 20px 0px 20px 20px;
+
+                                h4 {
+                                    margin: 0px 0px 10px;
+                                    font-size: 18px;
+
+                                    img {
+                                        margin-right: 5px;
+                                    }
+
+                                    @media screen and (max-width:767px) {
+                                        font-size: 15px;
+                                    }
+                                }
+
+                                .restaurants_rating {
+                                    margin: 0px 0px 10px;
+                                    font-weight: 600;
+                                }
+
+                                .rec_detail {
+                                    line-height: 1.4;
+                                    font-weight: 600;
+
+                                    @media screen and (max-width:767px) {
+                                        font-size: 12px;
+                                    }
+                                }
+
+                                .add_btn_menu  {
+                                    background: #fff;
+                                    font-size: 16px;
+                                    font-weight: 600;
+                                    margin: 0px auto;
+                                    padding: 5px 20px;
+                                    height: unset;
+                                    line-height: 1;
+                                    position: relative;
+                                    top: 0px;
+                                    box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 40%);    display: flex;
+                                    flex-direction: row-reverse;
+                                    height: auto;
+
+
+                                    mat-icon {
+                                        width: 20px;
+                                        height: 20px;
+                                        font-size: 20px; margin: 0px 0px 0px 5px;
+                                    }
+                                }
+
+                                .cust_text {
+                                    font-size: 12px;
+                                    text-align: center;
+                                    margin: 15px 0px 0px;
+                                    color: #554C4C;
+                                }
+
+                                @media screen and (max-width:767px) {
+                                    padding: 20px 0px 10px 10px;
+                                }
+                            }
+                        }
+                    }
+            }
+            @media screen and (max-width: 1200px) {
+                min-width: auto;
+            }
+            @media screen and (max-width: 768px) {
+                min-width: 95vw;
+                width: auto;
+            }
+        }
+    }
+    }

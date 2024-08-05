@@ -1,19 +1,17 @@
 import { Component, OnInit, Inject, ViewEncapsulation } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { RecipeDialogComponent } from '../recipe-dialog/recipe-dialog.component';
-import { AddItemComponent } from '../add-item/add-item.component';
+import { RecipeDialogComponent } from '../../recipe-dialog/recipe-dialog.component';
+import { AddItemComponent } from '../../add-item/add-item.component';
 import { OverlayContainer } from '@angular/cdk/overlay';
 import { Router } from '@angular/router';
 import { Location } from '@angular/common';
-import { AllMenuComponent } from './all-menu/all-menu.component';
 
 @Component({
-  selector: 'app-restaurant-detail',
-  templateUrl: './restaurant-detail.component.html',
-  styleUrls: ['./restaurant-detail.component.scss'],
-  encapsulation: ViewEncapsulation.None
+  selector: 'app-all-menu',
+  templateUrl: './all-menu.component.html',
+  styleUrls: ['./all-menu.component.scss']
 })
-export class RestaurantDetailComponent implements OnInit {
+export class AllMenuComponent implements OnInit {
   constructor(
     private router: Router,
     private location: Location, 

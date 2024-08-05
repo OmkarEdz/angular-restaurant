@@ -36,6 +36,7 @@ import { MatStepperModule } from '@angular/material/stepper';
 
 import { HttpClientModule } from '@angular/common/http';
 import { AllRestaurantsComponent } from './components/all-restaurants/all-restaurants.component';
+import { AllRestaurantsListComponent } from './components/all-restaurants/all-restaurants-list/all-restaurants-list.component';
 import { AddressComponent } from './components/address/address.component';
 import { RestaurantDetailComponent } from './components/restaurant-detail/restaurant-detail.component';
 import { MenuItemComponent } from './components/menu-item/menu-item.component';
@@ -49,11 +50,20 @@ import { CookingReqDialogComponent } from './components/cooking-req-dialog/cooki
 import { SaveAddressDialogComponent } from './components/save-address-dialog/save-address-dialog.component';
 import { GstDialogComponent } from './components/gst-dialog/gst-dialog.component';
 import { DeliveryDialogComponent } from './components/delivery-dialog/delivery-dialog.component';
+import { RouterModule, Routes } from '@angular/router';
+import { RecipeMoreDetailsComponent } from './components/recipe-more-details/recipe-more-details.component';
+import { AllMenuComponent } from './components/restaurant-detail/all-menu/all-menu.component';
+
+const routes: Routes = [
+    { path: 'restaurant-detail', component: AddressComponent }
+    // Add other routes as needed
+  ];
 
 @NgModule({
     declarations: [
         AppComponent,
         AllRestaurantsComponent,
+        AllRestaurantsListComponent,
         AddressComponent,
         RestaurantDetailComponent,
         MenuItemComponent,
@@ -67,6 +77,8 @@ import { DeliveryDialogComponent } from './components/delivery-dialog/delivery-d
         SaveAddressDialogComponent,
         GstDialogComponent,
         DeliveryDialogComponent,
+        RecipeMoreDetailsComponent,
+        AllMenuComponent,
     ],
     imports: [
         BrowserModule,
@@ -100,6 +112,7 @@ import { DeliveryDialogComponent } from './components/delivery-dialog/delivery-d
         MatChipsModule,
         MatSortModule,
         MatPaginatorModule,
+        RouterModule.forRoot(routes)
     ],
     providers: [],
     bootstrap: [AppComponent]

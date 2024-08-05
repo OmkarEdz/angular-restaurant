@@ -472,6 +472,10 @@
             align-items: center;
             line-height: 1 !important;
 
+            .mat-mdc-button-persistent-ripple {
+                opacity: 0;
+            }
+
             mat-icon {
                 color: #fff;
                 width: auto;

@@ -36,7 +36,6 @@ import { MatStepperModule } from '@angular/material/stepper';
 
 import { HttpClientModule } from '@angular/common/http';
 import { AllRestaurantsComponent } from './components/all-restaurants/all-restaurants.component';
-import { AllRestaurantsListComponent } from './components/all-restaurants/all-restaurants-list/all-restaurants-list.component';
 import { AddressComponent } from './components/address/address.component';
 import { RestaurantDetailComponent } from './components/restaurant-detail/restaurant-detail.component';
 import { MenuItemComponent } from './components/menu-item/menu-item.component';
@@ -53,6 +52,16 @@ import { DeliveryDialogComponent } from './components/delivery-dialog/delivery-d
 import { RouterModule, Routes } from '@angular/router';
 import { RecipeMoreDetailsComponent } from './components/recipe-more-details/recipe-more-details.component';
 import { AllMenuComponent } from './components/restaurant-detail/all-menu/all-menu.component';
+import { MenuCatrgoryComponent } from './components/restaurant-detail/menu-catrgory/menu-catrgory.component';
+import { MenuCatrgoryRecommededComponent } from './components/restaurant-detail/menu-catrgory-recommeded/menu-catrgory-recommeded.component';
+import { MenuComponent } from './components/restaurant-detail/menu/menu.component';
+import { SearchBarComponent } from './components/search-bar/search-bar.component';
+import { RestaurantFilterComponent } from './components/restaurant-filter/restaurant-filter.component';
+import { RestaurantComponent } from './components/restaurant/restaurant.component';
+import { RestaurantInfoComponent } from './components/restaurant-info/restaurant-info.component';
+import { OrderedMenuComponent } from './components/ordered-menu/ordered-menu.component';
+import { OrderTotalComponent } from './components/order-total/order-total.component';
+import { OrderPaymentComponent } from './components/order-payment/order-payment.component';
 
 const routes: Routes = [
     { path: 'restaurant-detail', component: AddressComponent }
@@ -63,7 +72,6 @@ const routes: Routes = [
     declarations: [
         AppComponent,
         AllRestaurantsComponent,
-        AllRestaurantsListComponent,
         AddressComponent,
         RestaurantDetailComponent,
         MenuItemComponent,
@@ -79,6 +87,16 @@ const routes: Routes = [
         DeliveryDialogComponent,
         RecipeMoreDetailsComponent,
         AllMenuComponent,
+        MenuCatrgoryComponent,
+        MenuCatrgoryRecommededComponent,
+        MenuComponent,
+        SearchBarComponent,
+        RestaurantFilterComponent,
+        RestaurantComponent,
+        RestaurantInfoComponent,
+        OrderedMenuComponent,
+        OrderTotalComponent,
+        OrderPaymentComponent,
     ],
     imports: [
         BrowserModule,

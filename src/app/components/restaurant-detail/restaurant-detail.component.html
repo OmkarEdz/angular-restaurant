@@ -2,33 +2,13 @@
     <div class="restaurants_inner_wrap">
         <div class="container">
             <button class="close_btn" (click)="backtopage()" mat-button mat-dialog-close><mat-icon>keyboard_arrow_left</mat-icon></button> 
-            <div class="rest_det_wrap">
-                <div class="rest_logo">
-                    <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/Dominos_pizza_logo.svg" alt="Restaurants logo"/>
-                </div>
-                <div class="rest_info">
-                    <h2>Domino’s Pizza</h2>
-                    <p class="restaurants_rating"><img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/green_review.svg" alt="Restaurants Image"> 4.3 <span>• 500 for two</span></p>
-                    <p class="rest_spl">Pizzas, Italian</p>
-                    <div class="rest_det_wrap">
-                        <p><img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/clock_icon.svg" alt="Clock Icon"/> 25-30 min • 2 km</p>
-                        <p class="rest_det_add">JM Road</p>
-                    </div>
-                </div>
-            </div>
+            <app-restaurant-info></app-restaurant-info>
         </div>
     </div>
     <div class="container">
         <div class="rest_menu_wrap">
             <div class="menu_head_wrap"><h3 class="menu_head">MENU</h3></div>
-            <div class="search_popup_top">
-                <form class="searchBox">
-                    <mat-form-field class="search-field-textbox" appearance="outline"  floatLabel="always">
-                        <input matInput placeholder="Search for area...">
-                        <mat-icon matPrefix>search</mat-icon>
-                    </mat-form-field>
-                </form>
-            </div>
+            <app-search-bar [class]="'search_popup_top'"></app-search-bar>
             <div class="menu_tabs">
                 <button class="menu_tab_btn"> <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/veg.svg" alt="Icon" /> Veg </button>
                 <button class="menu_tab_btn"> <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/nonveg.svg" alt="Icon" /> Nonveg </button>

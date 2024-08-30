@@ -1,0 +1,24 @@
+<div class="cart_box_one">
+    <div class="cart_box_one_top">
+        <div class="cart_box_head">Margherita Pizza</div>
+        <div class="cart_box_cont">
+            <div class="cart_box_cont_left">
+                <p class="text_grey">New Hand Tossed, Medium </p>
+                <p>Added by <span>Shiwani</span></p>
+                <p class="prd_price">₹ 519</p>
+            </div>
+            <div class="cart_box_cont_right">
+                <div class="cart_box_cont_inp">
+                    <button class="plusminus" (click)="handleMinus()"><mat-icon>remove</mat-icon></button>
+                    <input type="number" matInput  class="num" value="1" [(ngModel)]="value" />
+                    <button class="plusminus" (click)="handlePlus()"><mat-icon>add</mat-icon></button>
+                </div>
+                <p class="prd_price">₹ 519</p>
+            </div>
+        </div>
+    </div>
+    <div class="cart_box_one_bot">
+        <button mat-button (click)="redirectToRest()">Add more items <mat-icon>add_circle_outline</mat-icon></button>
+        <button (click)="openCookDialog()" mat-button>Add cooking requests <mat-icon>add_circle_outline</mat-icon></button>
+    </div>
+</div>

@@ -12,89 +12,12 @@
         </div>
     </div>
     <div class="container">
-        <div class="cart_box_one">
-            <div class="cart_box_one_top">
-                <div class="cart_box_head">Margherita Pizza</div>
-                <div class="cart_box_cont">
-                    <div class="cart_box_cont_left">
-                        <p class="text_grey">New Hand Tossed, Medium </p>
-                        <p>Added by <span>Shiwani</span></p>
-                        <p class="prd_price">₹ 519</p>
-                    </div>
-                    <div class="cart_box_cont_right">
-                        <div class="cart_box_cont_inp">
-                            <button class="plusminus" (click)="handleMinus()"><mat-icon>remove</mat-icon></button>
-                            <input type="number" matInput  class="num" value="1" [(ngModel)]="value" />
-                            <button class="plusminus" (click)="handlePlus()"><mat-icon>add</mat-icon></button>
-                        </div>
-                        <p class="prd_price">₹ 519</p>
-                    </div>
-                </div>
-            </div>
-            <div class="cart_box_one_bot">
-                <button mat-button (click)="redirectToRest()">Add more items <mat-icon>add_circle_outline</mat-icon></button>
-                <button (click)="openCookDialog()" mat-button>Add cooking requests <mat-icon>add_circle_outline</mat-icon></button>
-            </div>
-        </div>
-        <div class="cart_box_two">
-            <ul class="cart_box_list_wrap">
-                <li class="cart_box_list_item">
-                    <p class="cart_box_list_item_lbl">Item Total</p>
-                    <p class="bold_text_item"><span class="strike_text">₹ 548</span> ₹ 519</p>
-                </li>
-                <li class="cart_box_list_item">
-                    <p class="cart_box_list_item_lbl">Delivery Fee</p>
-                    <p class="bold_text_item">FREE</p>
-                </li>
-                <li class="cart_box_list_item">
-                    <p (click)="openDelvDialog()" class="cart_box_list_item_lbl bg_grey">See how this is calculated <mat-icon>keyboard_arrow_down</mat-icon></p>
-                </li>
-            </ul>
-            <ul class="cart_box_list_wrap border_top_bot">
-                <li class="cart_box_list_item">
-                    <p class="cart_box_list_item_lbl">Delivery Tip </p>
-                    <p class="bold_text_item">Add tip</p>
-                </li>
-                <li class="cart_box_list_item">
-                    <p [matMenuTriggerFor]="menu" class="cart_box_list_item_lbl cus_point lbl_underline">Platform fee</p>
-                    <mat-menu #menu="matMenu" yPosition="below" class="platorm_menu">
-                        <h3>Platorm fee</h3>
-                        <p>This fee helps us operate and improve our platform, delivering a seamless app experience.</p>
-                    </mat-menu>
-                    <p class="bold_text_item"><span class="strike_text">₹ 5.00</span> 4.00</p>
-                </li>
-                <li class="cart_box_list_item">
-                    <p (click)="openGSTDialog()" class="cart_box_list_item_lbl cus_point lbl_underline">GST and Restaurant Charges</p>
-                    <p class="bold_text_item">₹ 51.12</p>
-                </li>
-            </ul>
-            <ul class="cart_box_list_wrap">
-                <li class="cart_box_list_item">
-                    <p class="cart_box_list_item_lbl bold_text_item">To Pay</p>
-                    <p class="bold_text_item">₹ 574.12</p>
-                </li>
-            </ul>
-        </div>
+        <app-ordered-menu></app-ordered-menu>
+        <app-order-total></app-order-total>
         <div class="cart_box_content">
             <h3>CANCELLATION POLICY</h3>
             <p>Help us reduce food waste by avoiding cancellations after placing your order. A 100% cancellatuion fee will be applied.</p>
         </div>
     </div>
-    <div class="cart_foot_btn_wrap">
-        <div class="container">
-            <div class="cart_foot_btn_left">
-                <p class="cart_foot_text_sm"><img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/Google_Pay_Logo.svg.png" alt="" /> PAY USING</p>
-                <p class="cart_foot_text_lg">Google Pay UPI</p>
-            </div>
-            <div class="cart_foot_btn_right">
-                <div class="cart_foot_btn_right_left">
-                    <p class="price_bold">₹ 574.12</p>
-                    <p>TOTAL</p>
-                </div>
-                <div class="cart_foot_btn_right_text">
-                    Place Order <mat-icon>arrow_right</mat-icon>
-                </div>
-            </div>
-        </div>
-    </div>
+    <app-order-payment></app-order-payment>
 </div>

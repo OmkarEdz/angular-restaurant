@@ -1,0 +1,17 @@
+
+      <a class="click_link" (click)="router(restaurants_item.path)"></a>
+      <div class="restaurants_img_wrap">
+        <img [src]="restaurants_item.imgsrc" alt="Restaurants Image" />
+        <p class="restaurants_disc"><span>30%</span>OFF</p>
+      </div>
+      <div class="restaurants_details">
+        <h4 class="restaurants_name">{{ restaurants_item.restaurants_name }}</h4>
+        <p class="restaurants_add">{{ restaurants_item.restaurants_menu }}</p>
+        <p>{{ restaurants_item.restaurants_loc }} •<span>{{ restaurants_item.restaurants_dist }}</span></p>
+        <p class="restaurants_rating">
+          <img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/green_review.svg" alt="Restaurants Image" /> 
+          {{ restaurants_item.restaurants_rating }}
+        </p>
+        <p class="restaurants_distance">{{ restaurants_item.restaurants_dist_time }}</p>
+      </div>
+  

@@ -4,68 +4,21 @@
             <div class="address_left_top">
                 <button class="address_btn" (click)="openAddress()"><img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/address_icon.svg" alt="Address Icon" /> Address <mat-icon>arrow_drop_down</mat-icon></button>
             </div>
-            <div class="search_right_top">
-                <form class="searchBox">
-                    <mat-form-field class="search-field-textbox" appearance="outline" floatLabel="always">
-                        <input matInput placeholder="Search for “Samosa”">
-                        <mat-icon matPrefix>search</mat-icon>
-                    </mat-form-field>
-                    <button class="mic_button"><mat-icon>mic</mat-icon></button>
-                </form>
-            </div>
+            <app-search-bar [class]="'search_right_top'"></app-search-bar>
         </div>
         <div class="restaurants_listing_main">
             <div class="restaurants_head_wrapper">
                 <h2 class="restaurants_head">ALL RESTAURANTS</h2>
             </div>
-            <div class="restaurants_filter_wrap">
-                <ul>
-                    <li>
-                        <button class="filter_btn_item">Filter <mat-icon>tune</mat-icon></button>
-                    </li>
-                    <li>
-                        <button class="filter_btn_item">Sort by <mat-icon>keyboard_arrow_down</mat-icon></button>
-                    </li>
-                    <li>
-                        <button class="filter_btn_item">Nearest</button>
-                    </li>
-                    <li>
-                        <button class="filter_btn_item">Ratings 4.0+</button>
-                    </li>
-                    <li>
-                        <button class="filter_btn_item">Pure Veg</button>
-                    </li>
-                    <li>
-                        <button class="filter_btn_item">Favourites</button>
-                    </li>
-                    <li>
-                        <button class="filter_btn_item">Fast Delivery</button>
-                    </li>
-                </ul>
-            </div>
-            <app-all-restaurants-list></app-all-restaurants-list>
-            
-            <!-- <div class="restaurants_items_wrapper">
+            <app-restaurant-filter [class]="'restaurants_filter_wrap'"></app-restaurant-filter>
+            <div class="restaurants_items_wrapper">
                 <h3 class="restaurants_items_head">100 restaurants to explore</h3>
                 <ul>
-                    <li class="restaurants_item" *ngFor="let restaurants_item of restaurants">
-                        <div class="restaurants_item_inner">
-                            <a class="click_link" (click)="router(restaurants_item.path)"></a>
-                            <div class="restaurants_img_wrap">
-                                <img src="{{ restaurants_item.imgsrc }}" alt="Restaurants Image" />
-                                <p class="restaurants_disc"><span>30%</span>OFF</p>
-                            </div>
-                            <div class="restaurants_details">
-                                <h4 class="restaurants_name">{{ restaurants_item.restaurants_name }}</h4>
-                                <p class="restaurants_add">{{ restaurants_item.restaurants_menu }}</p>
-                                <p>{{ restaurants_item.restaurants_loc }} •<span>{{ restaurants_item.restaurants_dist }}</span></p>
-                                <p class="restaurants_rating"><img src="https://webdevfolio.com/edreamz_projects/togethring-restaurant/assets/green_review.svg" alt="Restaurants Image" /> {{ restaurants_item.restaurants_rating }}</p>
-                                <p class="restaurants_distance">{{ restaurants_item.restaurants_dist_time }}</p>
-                            </div>
-                        </div>
-                    </li>
+                    <li *ngFor="let restaurant of restaurants" class="restaurants_item">
+                        <app-restaurant [restaurants_item]="restaurant" class="restaurants_item_inner"></app-restaurant>
+                      </li>
                 </ul>
-            </div> -->
+            </div>
         </div>
     </div>
 </div>

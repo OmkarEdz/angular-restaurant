@@ -133,6 +133,8 @@
     .search_popup_top {
         width: 500px;
         margin: 20px auto;
+        display: block;
+        position: relative;
 
         .search-field-textbox {
             width: calc(100% - 30px);
@@ -199,6 +201,23 @@
                 border: none !important;
             }
         } 
+
+        .searchBox {
+
+            .mic_button {
+                position: absolute;
+                top: 0px;
+                bottom: 0px;
+                border: none;
+                margin: auto;
+                right: 15px;
+                border-left: 1px solid #000;
+                background: transparent;
+                padding: 0px 0px 0px 10px;
+                height: max-content;
+                line-height: 0;
+            }
+        }
 
         @media only screen and (max-width: 768px) {
             width: calc(100%);

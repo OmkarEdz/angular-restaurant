@@ -1,0 +1,39 @@
+<div class="cart_box_two">
+    <ul class="cart_box_list_wrap">
+        <li class="cart_box_list_item">
+            <p class="cart_box_list_item_lbl">Item Total</p>
+            <p class="bold_text_item"><span class="strike_text">₹ 548</span> ₹ 519</p>
+        </li>
+        <li class="cart_box_list_item">
+            <p class="cart_box_list_item_lbl">Delivery Fee</p>
+            <p class="bold_text_item">FREE</p>
+        </li>
+        <li class="cart_box_list_item">
+            <p (click)="openDelvDialog()" class="cart_box_list_item_lbl bg_grey">See how this is calculated <mat-icon>keyboard_arrow_down</mat-icon></p>
+        </li>
+    </ul>
+    <ul class="cart_box_list_wrap border_top_bot">
+        <li class="cart_box_list_item">
+            <p class="cart_box_list_item_lbl">Delivery Tip </p>
+            <p class="bold_text_item">Add tip</p>
+        </li>
+        <li class="cart_box_list_item">
+            <p [matMenuTriggerFor]="menu" class="cart_box_list_item_lbl cus_point lbl_underline">Platform fee</p>
+            <mat-menu #menu="matMenu" yPosition="below" class="platorm_menu">
+                <h3>Platorm fee</h3>
+                <p>This fee helps us operate and improve our platform, delivering a seamless app experience.</p>
+            </mat-menu>
+            <p class="bold_text_item"><span class="strike_text">₹ 5.00</span> 4.00</p>
+        </li>
+        <li class="cart_box_list_item">
+            <p (click)="openGSTDialog()" class="cart_box_list_item_lbl cus_point lbl_underline">GST and Restaurant Charges</p>
+            <p class="bold_text_item">₹ 51.12</p>
+        </li>
+    </ul>
+    <ul class="cart_box_list_wrap">
+        <li class="cart_box_list_item">
+            <p class="cart_box_list_item_lbl bold_text_item">To Pay</p>
+            <p class="bold_text_item">₹ 574.12</p>
+        </li>
+    </ul>
+</div>

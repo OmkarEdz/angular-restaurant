@@ -3,7 +3,6 @@ import { MatDialog } from '@angular/material/dialog';
 import { AddressComponent } from '../address/address.component';
 import { OverlayContainer } from '@angular/cdk/overlay';
 import { Router } from '@angular/router';
-import { AllRestaurantsListComponent } from './all-restaurants-list/all-restaurants-list.component';
 
 
 declare var $: any;

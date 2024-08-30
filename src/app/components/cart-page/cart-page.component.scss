@@ -97,7 +97,7 @@
         }
     }
 
-    .container {
+    ::ng-deep .container {
         max-width: 95%;
         margin: 0 auto;
 
@@ -115,7 +115,7 @@
         }
     }
 
-    .cart_box_one {
+    ::ng-deep .cart_box_one {
         margin: 30px 0px;
         padding: 30px;
         background: #fff;
@@ -305,7 +305,7 @@
         }
     }
 
-    .cart_box_two {
+    ::ng-deep .cart_box_two {
         margin: 30px 0px;
         padding: 15px 30px;
         background: #fff;
@@ -390,7 +390,7 @@
         }
     }
 
-    .cart_foot_btn_wrap {
+    ::ng-deep .cart_foot_btn_wrap {
         background: #fff;
 
         .container {
